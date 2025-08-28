@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rice Leaf Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌾 Rice Leaf Disease Classifier</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" capture="environment" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <p><strong>Prediction:</strong> {{ prediction }}</p>
+                <img src="{{ img_path }}" alt="Uploaded Image">
+            </div>
+        {% endif %}
+
+        {% if description %}
+            <div class="description">
+                <h3>🧬 Disease Description</h3>
+                <p>{{ description }}</p>
+            </div>
+        {% endif %}
+
+
+        {% if treatment_plan %}
+            <div class="treatment">
+                <h3>🧪 Treatment Plan (Day-wise)</h3>
+                <ul>
+                    {% for day, instruction in treatment_plan.items() %}
+                        <li><strong>{{ day }}:</strong> {{ instruction }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    text-align: center;
+    margin-top: 50px;
+}
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+input[type="file"] {
+    margin: 20px 0;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.result {
+    margin-top: 20px;
+}
+.result img {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.treatment {
+    background-color: #eafbea;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #cce5cc;
+    text-align: left;
+}
+.treatment h3 {
+    color: #2e7d32;
+}
+.treatment ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.treatment li {
+    margin: 8px 0;
+}
+.description {
+    background-color: #fff3cd;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #ffeeba;
+    text-align: left;
+}
+
+.description h3 {
+    color: #856404;
+}
+h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.result p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.result p strong {
+    color: #27ae60; /* green for "Prediction:" label */
+}
+
+.confidence {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 5px;
+}
