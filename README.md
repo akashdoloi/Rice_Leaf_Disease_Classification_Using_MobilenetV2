@@ -27,19 +27,16 @@ Simply upload a leaf image, and the app will classify it into one of the followi
 ````
 
 2. Install dependencies:
-
    ```bash
    pip install -r requirements.txt
    ```
 
 3. Run the app:
-
    ```bash
    python app.py
    ```
 
 4. Open the app in your browser at:
-
    ```
    http://127.0.0.1:5000
    ```
