@@ -31,11 +31,13 @@ Simply upload a leaf image, and the app will classify it into one of the followi
    ```bash
    pip install -r requirements.txt
    ```
+
 3. Run the app:
 
    ```bash
    python app.py
    ```
+
 4. Open the app in your browser at:
 
    ```
