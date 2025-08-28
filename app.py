@@ -6,7 +6,7 @@ from PIL import Image
 import os
 
 app = Flask(__name__)
-model = load_model("new_best_rice_leaf_mobilenetv2.keras")
+model = load_model("mobilenetv2.h5")
 class_labels = ['Bacterial Leaf Blight', 'Brown Spot', 'Healthy Rice Leaf', 'Leaf Blast','Leaf Scald','Sheath Blight']
 
 # Day-wise treatment dictionary
